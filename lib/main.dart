@@ -20,6 +20,14 @@ class MyApp extends StatelessWidget {
                 backgroundColor: Colors.white,
                 backgroundImage: AssetImage('images/sad.png'),
               ),
+              Text(
+                'Divyansh Dwivedi',
+                style: TextStyle(
+                  fontSize: 36.0,
+                  color: Colors.black,
+                  fontWeight: FontWeight.bold
+                ),
+              ),
             ],
           ),
         )
