@@ -11,75 +11,74 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.black,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               CircleAvatar(
                 radius: 50.0,
                 backgroundColor: Colors.white,
-                backgroundImage: AssetImage('images/sad.png'),
+                backgroundImage: AssetImage('images/me.jpeg'),
               ),
               Text(
                 'Divyansh Dwivedi',
                 style: TextStyle(
                   fontSize: 36.0,
-                  color: Colors.teal,
+                  color: Colors.lightGreenAccent,
                   fontWeight: FontWeight.bold
                 ),
+              ),
+              SizedBox(
+                height: 10.0,
               ),
               Text(
                 'AI & App Developer',
                 style: TextStyle(
                   fontSize: 18.0,
-                  color: Colors.black,
+                  color: Colors.lightGreenAccent,
                   fontWeight: FontWeight.bold
                 ),
               ),
-              Container(
-                margin: EdgeInsets.all(20.0),
-                padding: EdgeInsets.all(10.0),
-                color: Colors.teal,
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.phone,
-                      color: Colors.black,
-                    ),
-                    SizedBox(
-                      width: 20.0,
-                    ),
-                    Text(
-                      '+91 6394015772',
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: Colors.black
-                      ),
-                    ),
-                  ],
+              SizedBox(
+                width: 200.0,
+                height: 40.0,
+                child: Divider(
+                  color: Colors.teal.shade100,
                 ),
               ),
-              Container(
-                margin: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
-                padding: EdgeInsets.all(10.0),
+              Card(
+                margin: EdgeInsets.all(15.0),
                 color: Colors.teal,
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.mail,
-                      color: Colors.black,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.black,
+                  ),
+                  title: Text(
+                    '+91 6394015772',
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black
                     ),
-                    SizedBox(
-                      width: 20.0,
+                  ),
+                ),
+              ),
+              Card(
+                margin: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
+                color: Colors.teal,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.mail,
+                    color: Colors.black,
+                  ),
+                  title: Text(
+                    'justdvnsh2208@gmail.com',
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black
                     ),
-                    Text(
-                      'justdvnsh2208@gmail.com',
-                      style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          color: Colors.black
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
               ),
             ],
@@ -89,4 +88,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
