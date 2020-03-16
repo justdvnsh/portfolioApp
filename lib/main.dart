@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
                 'Divyansh Dwivedi',
                 style: TextStyle(
                   fontSize: 36.0,
-                  color: Colors.lightGreenAccent,
+                  color: Colors.lightGreen,
                   fontWeight: FontWeight.bold
                 ),
               ),
